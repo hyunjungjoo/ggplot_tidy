@@ -1,0 +1,24 @@
+# Load libraries
+library("tidyverse")
+
+# Stuff about dataframes
+mtcars
+
+str(mtcars)
+glimpse(mtcars)
+dim(mtcars)
+mean(mtcars$mpg)
+
+# Create a plot
+  # %>% (tidyverse) or |>: pipe 
+mtcars %>% 
+  ggplot() + 
+  aes(x = factor(cyl), y = mpg, fill = factor(cyl)) +
+  geom_boxplot()+
+  geom_point()
+
+mtcars %>%
+  ggplot() +
+  aes(x = drat, y = mpg) + 
+  geom_point() + 
+  geom_smooth(method = "lm", se = FALSE)

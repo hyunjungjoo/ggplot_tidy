@@ -1,0 +1,23 @@
+head(beginningReaders)
+head(danish)
+head(dativeSimplified)
+head(english)
+spanishFunctionWords
+
+english %>%
+  ggplot() +
+  aes(x = WrittenFrequency, y = RTnaming) + 
+  geom_point() + 
+  #geom_smooth(method = "lm", se = FALSE)+
+  #geom_jitter(width = 0.2, height = 0)+
+  #stat_summary(fun.data = mean_se, geom = "pointrange", 
+              # pch = 21) +
+  labs(y = "RT naming", x = "Written Frequency", title = "A bivariate scatterplot") + 
+  theme_bw() 
+
+dativeSimplified %>%
+  ggplot() +
+  aes(x = factor(AnimacyOfRec), y = LengthOfTheme, fill =  factor(AnimacyOfRec)) +
+  geom_boxplot()+
+  labs(y = "RT naming", x = "Written Frequency", title = "A boxplot with different fill colors") +
+  theme_bw()

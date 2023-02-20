@@ -1,0 +1,31 @@
+# This is a calculator
+2 + 2
+
+# This is a vector
+c(2, 5, 8)
+c("a", "b", "c")
+
+# Assign an object
+my_vector <- c(2, 5, 8)
+my_vector <- c("a", "b", "c")
+my_vector
+
+# An alternative assignment operator
+mo_complex = 2 + 7 * 10
+
+# Load package
+library("tidyverse")
+library("rmarkdown")
+library("devtools")
+
+# install_github("jvcasillas/ds4ling")
+library("ds4ling")
+
+my_numbers <- rnorm(n = 100, mean = 0, sd = 1)
+gg_qqplot(my_numbers)
+
+mean(my_numbers)
+sd(my_numbers)
+length(my_numbers)
+hist(my_numbers)
+

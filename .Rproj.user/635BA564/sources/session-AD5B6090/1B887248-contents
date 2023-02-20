@@ -1,0 +1,21 @@
+---
+title: "Programming assignment 2"
+author: "Hyunjung Joo"
+date: 'Last update: `r Sys.Date()`'
+output: 
+    github_document:  
+    highlight: kate  
+    keep_md: yes  
+    theme: united
+---
+
+```{r, 'load-data', echo=TRUE, message=FALSE, warning=FALSE}
+library("languageR")
+
+head(beginningReaders)
+danish
+dativeSimplified
+english
+spanishFunctionWords
+
+```
